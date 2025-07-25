@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centsaura Pop-up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .modal {
+      background: white;
+      padding: 20px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .title span {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .score {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .score span {
+      color: green;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: block;
+      margin: 15px auto 0;
+      padding: 10px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="title">
+      <span>😊</span> Hey there!
+    </div>
+    <p>Are you sure you want to make this purchase of <b>$0.00?</b></p>
+
+    <div class="score">
+      Your Centsaura score is <span>75/100</span>
+    </div>
+
+    <p>
+      • 55.6% of credit used.<br>
+      • 3 past regret(s).<br>
+      • Next paycheck in 4 day(s).
+    </p>
+
+    <p><b>Here's something to try:</b></p>
+    <ul>
+      <li>Aim to keep utilization under 30%.</li>
+      <li>Add to wishlist and revisit later.</li>
+      <li>Consider waiting until after payday.</li>
+    </ul>
+
+    <button class="btn">Continue</button>
+  </div>
+</body>
+</html>
